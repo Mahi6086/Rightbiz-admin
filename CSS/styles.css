@@ -1,0 +1,276 @@
+:root {
+  --white: #fff;
+  --bg: #f6f7f9;
+  --black: #333;
+  --blue: rgb(36, 100, 179);
+  --orange: #ffa500;
+  --grey: #eee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+li {
+  list-style: none;
+}
+/*-------
+   MENUBAR 
+   -------*/
+.container {
+  margin: 0px 30px;
+}
+#right {
+  color: var(--blue);
+  font-weight: 900;
+  text-shadow: 0 0 2px var(--blue);
+}
+.highlight {
+  color: var(--orange);
+}
+.section-title h2 {
+  font-size: 40px;
+  padding: 100px 0 50px 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+.logo h2 {
+  font-size: 35px;
+  color: var(--white);
+}
+.navigation li {
+  list-style: none;
+  display: inline-block;
+}
+.navigation li a {
+  text-decoration: none;
+  color: var(--black);
+  padding: 0px 20px;
+}
+.navber-btn {
+  border: 0;
+  outline: 0;
+  background-color: var(--blue);
+  color: var(--white);
+  cursor: pointer;
+  border-radius: 22px;
+  padding: 12px 17px;
+  font-size: 15px;
+}
+#navber-btn {
+  margin-left: 15px;
+  background-color: var(--orange);
+  color: var(--black);
+}
+.navber-btn .fas.fa-user {
+  font-size: 20px;
+}
+.horizental-line {
+  border-bottom: 1px solid rgb(185, 185, 185);
+  width: 100%;
+}
+
+.toggler-icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+#menu-toggler {
+  display: none;
+}
+.toggler-icon span {
+  height: 4px;
+  width: 30px;
+  margin-bottom: 4px;
+
+  background-color: var(--black);
+}
+.menu-toggler-label {
+  display: none;
+}
+#menu-toggler:checked ~ .navigation {
+  transform: translateX(0);
+}
+/*-------
+   MENUBAR 
+   -------*/
+
+/*-------
+   Banner 
+   -------*/
+
+.main-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 0px;
+}
+
+/*-------
+   Banner 
+   -------*/
+
+.flex {
+  display: flex;
+}
+.grid {
+  width: 70%;
+}
+.Activities {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin-top: 40px;
+}
+.grid:nth-child(2) {
+  width: 25%;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+.activity-card {
+  width: 100%;
+  height: auto;
+  border: 1px solid #d3d6d7;
+  text-align: center;
+  padding: 30px 15px 15px 20px;
+  border-radius: 15px;
+}
+.Membership {
+  margin-top: 50px;
+  background-color: #f5f8fc;
+  padding: 35px 0px 30px 35px;
+  border-radius: 10px;
+}
+.Membership > h1 {
+  font-family: Roboto;
+  font-size: 32px;
+  line-height: 37px;
+  color: #263238;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.Membership > p {
+  color: #263238;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 12px;
+}
+
+.activity-card > img {
+  margin-bottom: 10px;
+}
+.activity-card > h4 {
+  margin-bottom: 10px;
+}
+.activity-card > p {
+  font-size: 14px;
+}
+.Business {
+  border: 1px solid #d3d6d7;
+  border-radius: 15px;
+  background: #f5f8fc;
+  margin-bottom: 20px;
+}
+.Business-card {
+  padding: 10px;
+}
+.Business > h4 {
+  background-color: var(--blue);
+  padding: 16px 0px 16px 16px;
+  color: var(--white);
+  border-radius: 10px 10px 0px 0px;
+}
+.Business-card-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.Business-card-list > span {
+  margin-left: 8px;
+  margin-top: 2px;
+}
+.Business-card-bottom {
+  text-align: center;
+}
+.Business-card-bottom > h3 {
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.Business-card-bottom > p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.Business-last {
+  background: #2464b3;
+  padding: 30px 15px 25px 15px;
+  border-radius: 20px;
+}
+.Upgrade-Now-btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 0;
+  outline: 0;
+  background-color: var(--white);
+  color: var(--blue);
+  cursor: pointer;
+  border-radius: 22px;
+  padding: 12px 17px;
+  font-size: 15px;
+}
+/*------------------------------------
+   Use Media querey for mobile responsive
+   --------------------------------------*/
+@media (max-width: 750px) {
+  #navber-btn {
+    margin-top: 15px;
+  }
+  .menu-toggler-label {
+    display: block;
+  }
+  .navigation {
+    position: fixed;
+    background-color: rgb(59, 59, 59);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 99;
+    width: 500px;
+    max-width: 70%;
+    padding: 50px;
+    transform: translateX(-100%);
+    transition: 0.3s linear;
+  }
+  .navigation li {
+    display: block;
+    text-align: center;
+    margin: 30px;
+  }
+  .navigation li a:hover {
+    color: var(--white);
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Activities {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 20px;
+  }
+}

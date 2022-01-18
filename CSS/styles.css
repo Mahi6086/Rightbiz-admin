@@ -231,12 +231,36 @@ li {
   padding: 12px 17px;
   font-size: 15px;
 }
+.Question {
+  background: #ff9c00;
+  mix-blend-mode: hard-light;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 20px 20px 35px;
+  border-radius: 10px;
+}
+.Question-part > h1 {
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+.Question-part > p {
+  font-size: 1rem;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+.FAQ-btn {
+  padding: 0.8rem 1.4rem 0.8rem 1.4rem;
+}
 /*------------------------------------
    Use Media querey for mobile responsive
    --------------------------------------*/
 @media (max-width: 750px) {
   #navber-btn {
     margin-top: 15px;
+    margin-left: 0px;
   }
   .menu-toggler-label {
     display: block;
@@ -256,8 +280,12 @@ li {
   }
   .navigation li {
     display: block;
-    text-align: center;
+    text-align: start;
     margin: 30px;
+  }
+  .navigation li a {
+    color: var(--white);
+    padding: 0px 0px;
   }
   .navigation li a:hover {
     color: var(--white);
@@ -272,5 +300,17 @@ li {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 20px;
+  }
+  .grid:nth-child(2) {
+    width: 70%;
+    margin-left: 0px;
+  }
+  .Question {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+  }
+  .Question-part {
+    margin-bottom: 1.5rem;
   }
 }

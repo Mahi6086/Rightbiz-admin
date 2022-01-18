@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- ----------------
         Font Awesome
-     ------------------- -->
+    ------------------- -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -15,12 +15,12 @@
     />
     <!-- ----------------
         CSS Styles
-     ------------------- -->
+    ------------------- -->
     <link rel="stylesheet" href="./CSS/styles.css" />
 
     <!-- ----------------
         Google Font
-     ------------------- -->
+    ------------------- -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,10 +30,11 @@
 
     <title>RightBiz</title>
   </head>
+
   <body>
     <!-- ----------------
         Header Section
-     ------------------- -->
+    ------------------- -->
     <header class="main-container container" id="home">
       <nav class="navbar">
         <div class="logo">
@@ -41,16 +42,46 @@
         </div>
         <input type="checkbox" name="" id="menu-toggler" />
         <label for="menu-toggler" class="menu-toggler-label">
+          <button class="navber-btn">Sell Business</button>
           <div class="toggler-icon">
             <span></span><span></span><span></span>
           </div>
         </label>
         <ul class="navigation">
-          <li><a href="#buyABusiness">Buy A Business</a></li>
-          <li><a href="#sellABusiness">Sell A Business</a></li>
-          <li><a href="#buyAFranchise">Buy A Franchise</a></li>
-          <li><a href="#brokers">Brokers</a></li>
-          <button class="navber-btn">Sell Business</button>
+          <li>
+            <a href="#buyABusiness">Buy A Business</a>
+            <ul class="navbar-dropdown-menu">
+              <li><a href="/">New Businesses</a></li>
+              <li><a href="/">Distressed Businesses</a></li>
+              <li><a href="/">Register As Buyer</a></li>
+              <li><a href="/">Members Login</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#sellABusiness">Sell A Business</a>
+            <ul class="navbar-dropdown-menu">
+              <li><a href="/">Sell Your Business</a></li>
+              <li><a href="/">Sell With A Broker</a></li>
+              <li><a href="/">Seller Login</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#buyAFranchise">Buy A Franchise</a>
+            <ul class="navbar-dropdown-menu">
+              <li><a href="/">Buy A Franchise</a></li>
+              <li><a href="/">Advertise Your Franchise</a></li>
+              <li><a href="/">Franchise Login</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#brokers">Brokers</a>
+            <ul class="navbar-dropdown-menu">
+              <li><a href="/">Recommended Brokers</a></li>
+              <li><a href="/">Sell With A Broker</a></li>
+              <li><a href="/">For Brokers</a></li>
+            </ul>
+          </li>
+          <button class="navber-btn sell-business">Sell Business</button>
           <button class="navber-btn" id="navber-btn">
             <i class="fas fa-user"></i>
           </button>
@@ -60,11 +91,11 @@
     <div class="horizental-line"></div>
     <!-- ----------------
         Header Section
-     ------------------- -->
+    ------------------- -->
 
     <!-- ----------------
-       Main Section
-     ------------------- -->
+        Main Section
+    ------------------- -->
     <main>
       <section class="main-container">
         <div class="flex">

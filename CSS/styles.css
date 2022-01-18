@@ -15,10 +15,13 @@
 }
 body {
   font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  overflow-y: auto;
 }
 li {
   list-style: none;
 }
+
 /*-------
    MENUBAR 
    -------*/
@@ -40,8 +43,9 @@ li {
 .navbar {
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  height: 65px;
   align-items: center;
+  margin-right: 1.5rem;
 }
 .logo h2 {
   font-size: 35px;
@@ -53,7 +57,7 @@ li {
 }
 .navigation li a {
   text-decoration: none;
-  color: var(--black);
+  color: var(--blue);
   padding: 0px 20px;
 }
 .navber-btn {
@@ -88,11 +92,10 @@ li {
   display: none;
 }
 .toggler-icon span {
-  height: 4px;
-  width: 30px;
+  height: 3px;
+  width: 25px;
   margin-bottom: 4px;
-
-  background-color: var(--black);
+  background-color: var(--blue);
 }
 .menu-toggler-label {
   display: none;
@@ -104,9 +107,9 @@ li {
    MENUBAR 
    -------*/
 
-/*-------
-   Banner 
-   -------*/
+/*----------------
+   Main section css 
+   ----------------*/
 
 .main-container {
   max-width: 1200px;
@@ -114,10 +117,9 @@ li {
   margin: 0 auto;
   padding: 15px 0px;
 }
-
-/*-------
-   Banner 
-   -------*/
+.container {
+  padding: 5px 0px !important;
+}
 
 .flex {
   display: flex;
@@ -142,7 +144,7 @@ li {
   border: 1px solid #d3d6d7;
   text-align: center;
   padding: 30px 15px 15px 20px;
-  border-radius: 15px;
+  border-radius: 12px;
 }
 .Membership {
   margin-top: 50px;
@@ -176,7 +178,7 @@ li {
 }
 .Business {
   border: 1px solid #d3d6d7;
-  border-radius: 15px;
+  border-radius: 12px;
   background: #f5f8fc;
   margin-bottom: 20px;
 }
@@ -217,7 +219,7 @@ li {
 .Business-last {
   background: #2464b3;
   padding: 30px 15px 25px 15px;
-  border-radius: 20px;
+  border-radius: 12px;
 }
 .Upgrade-Now-btn {
   margin-top: 10px;
@@ -235,6 +237,7 @@ li {
   background: #ff9c00;
   mix-blend-mode: hard-light;
   margin-top: 50px;
+  margin-bottom: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -254,13 +257,98 @@ li {
 .FAQ-btn {
   padding: 0.8rem 1.4rem 0.8rem 1.4rem;
 }
+/*----------------
+   Main section css 
+   ----------------*/
+/*----------------
+   Footer section css 
+   ----------------*/
+.footer {
+  background: #263238;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+.footer-business > h3 {
+  color: var(--bg);
+  font-size: 1.5rem;
+  margin-bottom: 1.1rem;
+}
+.footer-line {
+  border-bottom: 1px solid rgb(185, 185, 185);
+}
+.li-bold {
+  font-size: 1.1rem !important;
+  font-weight: 300;
+  margin-bottom: 0.8rem !important;
+}
+
+.li-down {
+  margin-top: 2.8rem;
+}
+.li-bottom {
+  margin-top: 5rem;
+  font-size: 0.9rem !important;
+  margin-bottom: 0.4rem !important;
+}
+.footer-ul > li {
+  color: var(--bg);
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+  font-weight: 300;
+}
+.brokers {
+  font-size: 1rem !important;
+}
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0rem;
+}
+.copywrite {
+  color: var(--bg);
+}
+.help-support {
+  border-bottom: 2px solid var(--bg);
+  margin-left: 0.5rem;
+  padding-bottom: 0.4rem;
+}
+.social-icon .fab.fa-facebook-f {
+  color: var(--bg);
+  font-size: 1.2rem;
+}
+.social-icon .fab.fa-twitter {
+  color: var(--bg);
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+.social-icon .fab.fa-instagram {
+  color: var(--bg);
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+/*----------------
+  Footer section css 
+   ----------------*/
+
 /*------------------------------------
    Use Media querey for mobile responsive
    --------------------------------------*/
 @media (max-width: 750px) {
+  .navbar {
+    padding: 0 0.8rem;
+  }
+  .logo h2 {
+    font-size: 30px;
+  }
   #navber-btn {
     margin-top: 15px;
-    margin-left: 0px;
+    margin-left: 20px;
   }
   .menu-toggler-label {
     display: block;
@@ -301,16 +389,39 @@ li {
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 20px;
   }
+  .grid {
+    width: 90%;
+  }
   .grid:nth-child(2) {
-    width: 70%;
+    width: 90%;
     margin-left: 0px;
   }
+  .Membership {
+    padding: 35px 10px 30px 24px;
+  }
   .Question {
+    padding: 35px 20px 50px 35px;
     display: flex;
     flex-direction: column;
     text-align: start;
   }
   .Question-part {
     margin-bottom: 1.5rem;
+  }
+  .main-container .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer {
+    padding: 0 1rem;
+  }
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .social-icon {
+    margin-top: 2rem;
   }
 }

@@ -129,9 +129,9 @@ ul.navbar-dropdown-menu {
   position: absolute;
   top: 2.25rem;
   left: 1.25rem;
-  width: 13.75rem;
+  width: 13.5rem;
   background-color: #fff;
-  padding: 0.6rem 0;
+  padding: 0.75rem 0;
   border-radius: 0.4rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0 0.5rem 1.5rem;
   opacity: 0;
@@ -142,7 +142,7 @@ ul.navbar-dropdown-menu {
 ul.navbar-dropdown-menu > li > a {
   text-decoration: none;
   color: var(--blue);
-  padding: 0.7rem 1.2rem;
+  padding: 0.4rem 1.2rem;
   display: block;
 }
 
@@ -201,7 +201,7 @@ ul.navbar-dropdown-menu > li > a:hover {
   border: 0.1rem solid #d3d6d7;
   text-align: center;
   padding: 1.8rem 0.9rem 0.9rem 1.25rem;
-  border-radius: 0.75rem;
+  border-radius: 0.45rem;
   transition: all 0.3s ease;
 }
 .activity-card:hover {
@@ -213,7 +213,7 @@ ul.navbar-dropdown-menu > li > a:hover {
   margin-top: 3.1rem;
   background-color: #f5f8fc;
   padding: 2.1rem 0 1.9rem 2.1rem;
-  border-radius: 0.6rem;
+  border-radius: 0.45rem;
 }
 
 .Membership > h1 {
@@ -246,7 +246,7 @@ ul.navbar-dropdown-menu > li > a:hover {
 
 .Business {
   border: 0.1rem solid #d3d6d7;
-  border-radius: 0.75rem;
+  border-radius: 0.45rem;
   background: #f5f8fc;
   margin-bottom: 1.25rem;
 }
@@ -259,7 +259,7 @@ ul.navbar-dropdown-menu > li > a:hover {
   background-color: var(--blue);
   padding: 1rem 0 1rem 1rem;
   color: var(--white);
-  border-radius: 0.6rem 0.6rem 0 0;
+  border-radius: 0.45rem 0.45rem 0 0;
 }
 
 .Business-card-list {
@@ -294,7 +294,7 @@ ul.navbar-dropdown-menu > li > a:hover {
 .Business-last {
   background: #2464b3;
   padding: 1.9rem 0.9rem 1.5rem 0.9rem;
-  border-radius: 0.75rem;
+  border-radius: 0.45rem;
 }
 
 .Upgrade-Now-btn {
@@ -319,7 +319,7 @@ ul.navbar-dropdown-menu > li > a:hover {
   align-items: center;
   justify-content: space-between;
   padding: 2.1rem 1.25rem 1.25rem 2.1rem;
-  border-radius: 0.6rem;
+  border-radius: 0.45rem;
 }
 
 .Question-part > h1 {
@@ -467,7 +467,9 @@ ul.navbar-dropdown-menu > li > a:hover {
     transform: translateX(-100%);
     transition: 0.3s linear;
   }
-
+  ul.navbar-dropdown-menu {
+    padding: 0.35rem 0;
+  }
   .navigation li {
     display: block;
     text-align: start;

@@ -4,29 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- ----------------
-        Font Awesome
-    ------------------- -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
+
     <!-- ----------------
         CSS Styles
     ------------------- -->
     <link rel="stylesheet" href="./CSS/styles.css" />
-
-    <!-- ----------------
-        Google Font
-    ------------------- -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
 
     <title>RightBiz</title>
   </head>
@@ -50,7 +32,12 @@
         <ul class="navigation">
           <li>
             <a href="#buyABusiness"
-              >Buy A Business<i class="fas fa-chevron-down"></i>
+              >Buy A Business
+              <svg class="down-arrow-svg">
+                <use
+                  xlink:href="./assets/images/svg/down-arrow.svg#down-arrow"
+                ></use>
+              </svg>
             </a>
             <ul class="navbar-dropdown-menu">
               <li><a href="/">New Businesses</a></li>
@@ -61,7 +48,11 @@
           </li>
           <li>
             <a href="#sellABusiness"
-              >Sell A Business<i class="fas fa-chevron-down"></i
+              >Sell A Business
+              <svg class="down-arrow-svg">
+                <use
+                  xlink:href="./assets/images/svg/down-arrow.svg#down-arrow"
+                ></use></svg
             ></a>
             <ul class="navbar-dropdown-menu">
               <li><a href="/">Sell Your Business</a></li>
@@ -71,7 +62,11 @@
           </li>
           <li>
             <a href="#buyAFranchise"
-              >Buy A Franchise<i class="fas fa-chevron-down"></i
+              >Buy A Franchise
+              <svg class="down-arrow-svg">
+                <use
+                  xlink:href="./assets/images/svg/down-arrow.svg#down-arrow"
+                ></use></svg
             ></a>
             <ul class="navbar-dropdown-menu">
               <li><a href="/">Buy A Franchise</a></li>
@@ -80,7 +75,13 @@
             </ul>
           </li>
           <li>
-            <a href="#brokers">Brokers<i class="fas fa-chevron-down"></i></a>
+            <a href="#brokers"
+              >Brokers
+              <svg class="down-arrow-svg">
+                <use
+                  xlink:href="./assets/images/svg/down-arrow.svg#down-arrow"
+                ></use></svg
+            ></a>
             <ul class="navbar-dropdown-menu">
               <li><a href="/">Recommended Brokers</a></li>
               <li><a href="/">Sell With A Broker</a></li>
@@ -89,7 +90,11 @@
           </li>
           <button class="navber-btn sell-business">Sell Business</button>
           <button class="navber-btn" id="navber-btn">
-            <i class="fas fa-user"></i>
+            <svg class="user-icon">
+              <use
+                xlink:href="./assets/images/svg/user-solid.svg#user-icon"
+              ></use>
+            </svg>
           </button>
         </ul>
       </nav>
@@ -393,9 +398,21 @@
               </p>
             </div>
             <div class="social-icon">
-              <i class="fab fa-facebook-f"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-instagram"></i>
+              <svg style="fill: var(--bg); width: 0.9rem">
+                <use
+                  xlink:href="./assets/images/svg/facebook-f-brands.svg#facebook"
+                ></use>
+              </svg>
+              <svg style="fill: var(--bg); width: 1.1rem; margin-left: 0.5rem">
+                <use
+                  xlink:href="./assets/images/svg/twitter-brands.svg#twitter"
+                ></use>
+              </svg>
+              <svg style="fill: var(--bg); width: 1.1rem; margin-left: 0.5rem">
+                <use
+                  xlink:href="./assets/images/svg/instagram-brands.svg#instagram"
+                ></use>
+              </svg>
             </div>
             <div>
               <img src="./images/Group 1595 (1).png" alt="" />

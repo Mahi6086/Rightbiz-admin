@@ -193,7 +193,10 @@ ul.navbar-dropdown-menu > li > a:hover {
   margin: 0 auto;
   padding: 0.9rem 0;
 }
-
+.main-container.marquee {
+  padding-top: 1rem;
+  padding-right: 1.9rem;
+}
 .container {
   padding: 0.3rem 0 !important;
 }
@@ -215,7 +218,7 @@ ul.navbar-dropdown-menu > li > a:hover {
 
 .grid:nth-child(2) {
   width: 25%;
-  margin-top: 2.5rem;
+  margin-top: 1.1rem;
   margin-left: 1.9rem;
 }
 
@@ -235,7 +238,7 @@ ul.navbar-dropdown-menu > li > a:hover {
 }
 
 .Membership {
-  margin-top: 3.1rem;
+  margin-top: 1.1rem;
   background-color: var(--lgwhite);
   padding: 2.1rem 0 1.9rem 2.1rem;
   border-radius: 0.45rem;
@@ -271,6 +274,7 @@ ul.navbar-dropdown-menu > li > a:hover {
 
 .Business {
   border: 0.1rem solid var(--deepwhite);
+  border-top: none;
   border-radius: 0.45rem;
   background: var(--lgwhite);
   margin-bottom: 1.25rem;

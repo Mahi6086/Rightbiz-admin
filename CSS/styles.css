@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("/assets/fonts/Outfit/static/Outfit-Regular.ttf");
+}
 :root {
   --white: #fff;
   --bg: #f6f7f9;
@@ -8,8 +12,12 @@
   --dpblack: #263238;
   --blue: rgb(36, 100, 179);
   --lgblue: #2464b3;
+  --blue-d-1: #1a4a86;
+  --blue-d-2: #13355f;
   --orange: #ffa500;
+  --orange-l-1: #ffac29;
   --lgorange: #ff9c00;
+  --orange-d-1: #d18000;
   --grey: #eee;
   --deepgray: rgb(185, 185, 185);
   --shadow: rgba(149, 157, 165, 0.2) 0 0.5rem 1.5rem;
@@ -88,6 +96,8 @@ li {
   text-decoration: none;
   color: var(--blue);
   padding: 1.2rem;
+  font-size: 0.875rem;
+  font-weight: 500;
 }
 
 .navber-btn {
@@ -98,15 +108,24 @@ li {
   cursor: pointer;
   border-radius: 1.3rem;
   padding: 0.75rem 1rem;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
+  font-weight: 500;
 }
-
-#navber-btn {
+.sell-business:hover {
+  background-color: var(--blue-d-1);
+}
+.user-btn {
   margin-left: 0.9rem;
   background-color: var(--orange);
   color: var(--black);
 }
-
+.user-btn-hover:hover {
+  background-color: var(--orange-d-1);
+  color: var(--black);
+}
+.survey-btn-hover:hover {
+  background-color: var(--orange-l-1);
+}
 .horizental-line {
   border-bottom: 1px solid var(--deepgray);
   width: 100%;
@@ -163,8 +182,8 @@ ul.navbar-dropdown-menu > li > a {
   color: var(--blue);
   padding: 0.4rem 1.2rem;
   display: block;
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 0.875rem;
+  font-weight: 500;
 }
 
 ul.navbar-dropdown-menu > li > a:hover {
@@ -244,7 +263,7 @@ ul.navbar-dropdown-menu > li > a:hover {
 }
 
 .Membership > h1 {
-  font-family: Roboto;
+  font-family: "Outfit", sans-serif;
   font-size: 2rem;
   line-height: 2.3rem;
   color: var(--dpblack);
@@ -268,7 +287,7 @@ ul.navbar-dropdown-menu > li > a:hover {
 }
 
 .activity-card > p {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
 }
 
 .Business {
@@ -286,7 +305,8 @@ ul.navbar-dropdown-menu > li > a:hover {
 .Business > h4 {
   color: var(--blue);
   padding: 1rem 0 0.5rem 1rem;
-
+  font-size: 1.125rem;
+  font-weight: 500;
   border-radius: 0.4rem 0.4rem 0 0;
 }
 
@@ -302,6 +322,7 @@ ul.navbar-dropdown-menu > li > a:hover {
 .Business-card-list > span {
   margin-left: 0.5rem;
   margin-top: 0.12rem;
+  font-size: 0.875rem;
 }
 
 .Business-card-bottom {
@@ -317,7 +338,7 @@ ul.navbar-dropdown-menu > li > a:hover {
 }
 
 .Business-card-bottom > p {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   margin-bottom: 0.6rem;
   color: var(--white);
 }
@@ -389,7 +410,7 @@ ul.navbar-dropdown-menu > li > a:hover {
 
 .footer-business > h3 {
   color: var(--bg);
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 1.1rem;
 }
 
@@ -398,8 +419,8 @@ ul.navbar-dropdown-menu > li > a:hover {
 }
 
 .li-bold {
-  font-size: 1.1rem !important;
-  font-weight: 300;
+  font-size: 1.25rem !important;
+  font-weight: 600;
   margin-bottom: 0.8rem !important;
 }
 
@@ -415,9 +436,10 @@ ul.navbar-dropdown-menu > li > a:hover {
 
 .footer-ul > li {
   color: var(--bg);
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight: 500;
   margin-bottom: 0.4rem;
-  font-weight: 300;
+
   transition: all 0.3s ease;
 }
 .footer-ul > li:hover {
@@ -438,6 +460,7 @@ ul.navbar-dropdown-menu > li > a:hover {
 
 .copywrite {
   color: var(--bg);
+  font-size: 1.125rem;
 }
 
 .help-support {
@@ -574,6 +597,15 @@ ul.navbar-dropdown-menu > li > a:hover {
   }
   .sell-business {
     display: none;
+  }
+  .help-support {
+    border-bottom: 0.12rem solid var(--bg);
+    margin-left: 3.5rem;
+
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 0.4rem;
   }
 
   .copywrite {

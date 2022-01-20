@@ -114,6 +114,7 @@ li {
 .horizental-line {
   border-bottom: 1px solid var(--deepgray);
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .toggler-icon {
@@ -276,7 +277,7 @@ ul.navbar-dropdown-menu > li > a:hover {
 
 .Business {
   border: 0.1rem solid var(--deepwhite);
-  border-top: none;
+
   border-radius: 0.45rem;
   background: var(--lgwhite);
   margin-bottom: 1.25rem;
@@ -287,9 +288,9 @@ ul.navbar-dropdown-menu > li > a:hover {
 }
 
 .Business > h4 {
-  background-color: var(--blue);
-  padding: 1rem 0 1rem 1rem;
-  color: var(--white);
+  color: var(--blue);
+  padding: 1rem 0 0.5rem 1rem;
+
   border-radius: 0.4rem 0.4rem 0 0;
 }
 

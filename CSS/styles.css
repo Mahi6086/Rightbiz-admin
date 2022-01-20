@@ -229,8 +229,8 @@ ul.navbar-dropdown-menu > li > a:hover {
   transition: all 0.3s ease;
 }
 .activity-icon {
-  width: 5.5rem;
-  height: 5.5rem;
+  width: 5rem;
+  height: 4.5rem;
   margin-bottom: 1rem;
 }
 .activity-card:hover {

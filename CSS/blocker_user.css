@@ -12,12 +12,12 @@
   margin-left: 1.2rem;
 }
 .membership-card .desc {
-  font-size: 14px;
-  margin-left: 1px;
+  font-size: 0.875rem;
+  margin-left: 0.1rem;
   color: #555;
 }
 .membership-card > .title {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
 }
 
@@ -27,22 +27,23 @@
   height: 2.2rem;
 }
 .content_main {
-  padding: 25px;
+  padding: 2rem;
+  padding-top: 0rem !important;
 }
 .no-result {
   display: table;
   width: 100%;
 }
 .no-result > div {
-  height: 250px;
+  height: 15.625rem;
   display: table-cell;
   vertical-align: middle;
-  border: 1px solid #ddd;
+  border: 0.1rem solid #ddd;
   text-align: center;
 }
 .no-result .no-result-title {
   color: #555;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }

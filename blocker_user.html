@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ----------------
+        CSS Styles
+    ------------------- -->
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="./CSS/blocker_user.css" />
+
+    <title>RightBiz</title>
+  </head>
+
+  <body>
+    <!-- ----------------
+        Header Section
+    ------------------- -->
+    <header class="main-container container" id="home">
+      <nav class="navbar">
+        <div class="logo">
+          <h2 id="right">Right<span class="highlight">biz</span></h2>
+        </div>
+        <input type="checkbox" name="" id="menu-toggler" />
+        <label for="menu-toggler" class="menu-toggler-label">
+          <button class="navber-btn">Sell Business</button>
+          <div class="toggler-icon">
+            <span></span><span></span><span></span>
+          </div>
+        </label>
+        <ul class="navigation">
+          <li>
+            <a href="#buyABusiness"
+              >Buy A Business
+              <svg class="down-arrow-svg">
+                <use
+                  xlink:href="./assets/images/svg/down-arrow.svg#down-arrow"
+                ></use>
+              </svg>
+            </a>
+            <ul class="navbar-dropdown-menu">
+              <li><a href="/">New Businesses</a></li>
+              <li><a href="/">Distressed Businesses</a></li>
+              <li><a href="/">Register As Buyer</a></li>
+              <li><a href="/">Members Login</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#sellABusiness"
+              >Sell A Business
+              <svg class="down-arrow-svg">
+                <use
+                  xlink:href="./assets/images/svg/down-arrow.svg#down-arrow"
+                ></use></svg
+            ></a>
+            <ul class="navbar-dropdown-menu">
+              <li><a href="/">Sell Your Business</a></li>
+              <li><a href="/">Sell With A Broker</a></li>
+              <li><a href="/">Seller Login</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#buyAFranchise"
+              >Buy A Franchise
+              <svg class="down-arrow-svg">
+                <use
+                  xlink:href="./assets/images/svg/down-arrow.svg#down-arrow"
+                ></use></svg
+            ></a>
+            <ul class="navbar-dropdown-menu">
+              <li><a href="/">Buy A Franchise</a></li>
+              <li><a href="/">Advertise Your Franchise</a></li>
+              <li><a href="/">Franchise Login</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#brokers"
+              >Brokers
+              <svg class="down-arrow-svg">
+                <use
+                  xlink:href="./assets/images/svg/down-arrow.svg#down-arrow"
+                ></use></svg
+            ></a>
+            <ul class="navbar-dropdown-menu">
+              <li><a href="/">Recommended Brokers</a></li>
+              <li><a href="/">Sell With A Broker</a></li>
+              <li><a href="/">For Brokers</a></li>
+            </ul>
+          </li>
+          <button class="navber-btn sell-business">Sell Business</button>
+          <button class="navber-btn user-btn user-btn-hover">
+            <svg class="user-icon">
+              <use
+                xlink:href="./assets/images/svg/user-solid.svg#user-icon"
+              ></use>
+            </svg>
+          </button>
+        </ul>
+      </nav>
+    </header>
+    <div class="horizental-line"></div>
+    <!-- ----------------
+        Header Section
+    ------------------- -->
+
+    <!-- ----------------
+        Main Section
+    ------------------- -->
+    <main>
+      <section class="main-container">
+        <div class="flex">
+          <div class="grid">
+            <div class="Membership">
+              <h1>You are on a Basic Membership</h1>
+              <p>
+                Become a Premium Buyer and enjoy full access to all features,
+                including seller contact details.
+              </p>
+              <button class="navber-btn">Upgrade Now</button>
+              <button class="navber-btn user-btn survey-btn-hover">
+                Take a Survey
+              </button>
+            </div>
+            <!-- --------------------
+                  blocker user section
+                ---------------------->
+            <div class="membership-card">
+              <div class="blocker-user">
+                <svg class="svg-block">
+                  <use
+                    xlink:href="./assets/images/svg/ban-solid.svg#ban-solid"
+                  ></use>
+                </svg>
+                <div class="blocker-title">
+                  <div class="title">Blockers Users</div>
+                  <div class="desc">
+                    Manage all of the users you have blocked.
+                  </div>
+                </div>
+              </div>
+              <div class="content_main">
+                <div class="no-result" style="margin-top: 20px">
+                  <div>
+                    <div class="no-result-title" style="margin: 0">
+                      You have no blocked users
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="line-height: 17px; margin-top: 30px; font-size: 13px"
+                >
+                  <b style="color: #444; margin-bottom: 3px"
+                    >How do I block a user?</b
+                  >
+                  <div style="color: #666; margin-bottom: 15px">
+                    You can only block a user from your messages.
+                    <a href="/member_secure/my_msg/messages.php"
+                      >Go to messages.</a
+                    >
+                  </div>
+                  <b style="color: #444; margin-bottom: 3px"
+                    >Why would I block a user?</b
+                  >
+                  <div style="color: #666; margin-bottom: 15px">
+                    There can be many reasons. If you feel that - there is a
+                    user that you are not interested in knowing about or feel
+                    they are wasting your time, then you can prevent them from
+                    messaging you by blocking them.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!----------------------- 
+                blocker user section 
+            -------------------------->
+            <div class="Question">
+              <div class="Question-part">
+                <h1>Have a Question?</h1>
+                <p>Visit our help and FAQ for answers</p>
+              </div>
+
+              <button class="navber-btn FAQ-btn">Go to help & FAQ</button>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="Business Hide-Business">
+              <h4>Business</h4>
+              <div class="Business-card">
+                <ul>
+                  <li class="Business-card-list">
+                    <img src="./images/icon/Group 1614.png" alt="" />
+                    <span>Home</span>
+                  </li>
+                  <li class="Business-card-list">
+                    <img src="./images/icon/Group 1615.png" alt="" /><span
+                      >Email Alerts</span
+                    >
+                  </li>
+                  <li class="Business-card-list">
+                    <img src="./images/icon/Group 1616.png" alt="" /><span
+                      >One-Click Message</span
+                    >
+                  </li>
+                  <li class="Business-card-list">
+                    <img src="./images/icon/Group 1622.png" alt="" /><span
+                      >Saved</span
+                    >
+                  </li>
+                  <li class="Business-card-list">
+                    <img src="./images/icon/Group 1618.png" alt="" /><span
+                      >Messages</span
+                    >
+                  </li>
+                  <li class="Business-card-list">
+                    <img src="./images/icon/Group 1619.png" alt="" /><span
+                      >Premium Buyer</span
+                    >
+                  </li>
+                  <li class="Business-card-list">
+                    <img src="./images/icon/Group 1620.png" alt="" /><span
+                      >Enquiry History</span
+                    >
+                  </li>
+                  <li class="Business-card-list">
+                    <img src="./images/icon/Group 1621.png" alt="" /><span
+                      >Find Broker</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="Business Hide-Business">
+              <h4>Selling a Business</h4>
+              <div class="Business-card">
+                <ul>
+                  <li class="Business-card-list">
+                    <img src="./images/icon/Group 1623.png" alt="" />
+                    <span>Create Advert</span>
+                  </li>
+                  <li class="Business-card-list">
+                    <img src="./images/icon/Group 1624.png" alt="" /><span
+                      >View & Edit My Adverts</span
+                    >
+                  </li>
+                  <li class="Business-card-list">
+                    <img src="./images/icon/Group 1625.png" alt="" /><span
+                      >Messages</span
+                    >
+                  </li>
+                  <li class="Business-card-list">
+                    <img src="./images/icon/Group 1626.png" alt="" /><span
+                      >Blocked Users</span
+                    >
+                  </li>
+                  <li class="Business-card-list">
+                    <img src="./images/icon/Group 1627.png" alt="" /><span
+                      >Testomonia</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="Business Hide-Business">
+              <h4>My Account & Support</h4>
+              <div class="Business-card">
+                <ul>
+                  <li class="Business-card-list">
+                    <img src="./images/icon/Group 1628.png" alt="" />
+                    <span>Account Details</span>
+                  </li>
+                  <li class="Business-card-list">
+                    <img src="./images/icon/Group 1629.png" alt="" /><span
+                      >Personal Details</span
+                    >
+                  </li>
+                  <li class="Business-card-list">
+                    <img src="./images/icon/Group 1630.png" alt="" /><span
+                      >Help & Support</span
+                    >
+                  </li>
+                  <li class="Business-card-list">
+                    <img src="./images/icon/Group 1631.png" alt="" /><span
+                      >Feedback</span
+                    >
+                  </li>
+                  <li class="Business-card-list">
+                    <img src="./images/icon/Group 1632.png" alt="" /><span
+                      >Logout</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="Business-last">
+              <div class="Business-card-bottom">
+                <h3>You are on Basic Membership</h3>
+                <p>
+                  Looking to buy a business? Become a Premium Buyer and enjoy
+                  full access to all of our Premium Buyer features!
+                </p>
+                <button class="Upgrade-Now-btn">Upgrade Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ----------------
+       Main Section
+     ------------------- -->
+      <!-- ----------------
+        Footer Section
+     ------------------- -->
+      <section class="footer">
+        <footer class="main-container">
+          <div class="footer-grid">
+            <div class="footer-business">
+              <h3>Right<span class="highlight">biz</span></h3>
+              <ul class="footer-ul">
+                <li class="li-bold">Buy Business</li>
+                <li>New Businesses</li>
+                <li>Register Free</li>
+                <li>Premium Buyer</li>
+              </ul>
+            </div>
+            <div>
+              <ul class="footer-ul">
+                <li class="li-bold li-down">Sell Business</li>
+                <li>Sell Businesses</li>
+                <li>Sell with a Broker</li>
+                <li>Happy Sellers</li>
+              </ul>
+            </div>
+            <div>
+              <ul class="footer-ul">
+                <li class="li-bold li-down brokers">Brokers & Franchise</li>
+                <li>Agent Advertising</li>
+                <li>Franchise Advertising</li>
+                <li>Recommended Brokers</li>
+              </ul>
+            </div>
+            <div>
+              <ul class="footer-ul">
+                <li class="li-bold li-down li-bottom">Sell with a Broker</li>
+                <li>For Brokers</li>
+                <li>For Franchise</li>
+              </ul>
+            </div>
+            <div>
+              <ul class="footer-ul">
+                <li class="li-bold li-down">Company</li>
+                <li>About Us</li>
+                <li>Terms & Privacy</li>
+                <li>Cookies Policy</li>
+              </ul>
+            </div>
+            <div>
+              <ul class="footer-ul">
+                <li class="li-bold li-down li-bottom">Sitemap</li>
+                <li>Testimonals</li>
+                <li></li>
+              </ul>
+            </div>
+            <div>
+              <ul class="footer-ul">
+                <li class="li-bold li-down">Support</li>
+                <li>Contact Us</li>
+                <li>Feedback</li>
+                <li>Report a business</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-line"></div>
+          <div class="footer-bottom">
+            <div>
+              <p class="copywrite">
+                &copy; 2016-2022 RightBiz Ltd.All Rights Reserved.<span
+                  class="help-support"
+                >
+                  Help & Support</span
+                >
+              </p>
+            </div>
+            <div class="social-icon">
+              <svg style="fill: var(--bg); width: 1rem; height: 2rem">
+                <use
+                  xlink:href="./assets/images/svg/facebook-f-brands.svg#facebook"
+                ></use>
+              </svg>
+              <svg
+                style="
+                  fill: var(--bg);
+                  width: 1.3rem;
+                  margin-left: 0.8rem;
+                  height: 2rem;
+                "
+              >
+                <use
+                  xlink:href="./assets/images/svg/twitter-brands.svg#twitter"
+                ></use>
+              </svg>
+              <svg
+                style="
+                  fill: var(--bg);
+                  width: 1.3rem;
+                  margin-left: 0.8rem;
+                  height: 2rem;
+                "
+              >
+                <use
+                  xlink:href="./assets/images/svg/instagram-brands.svg#instagram"
+                ></use>
+              </svg>
+            </div>
+            <div>
+              <img src="./images/Group 1595 (1).png" alt="" />
+            </div>
+          </div>
+        </footer>
+      </section>
+      <!-- ----------------
+        Footer Section
+     ------------------- -->
+    </main>
+  </body>
+</html>

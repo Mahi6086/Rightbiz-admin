@@ -1,0 +1,120 @@
+/*----------------
+  Footer section css
+  ----------------*/
+.footer {
+  background: #263238;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.footer-business > h3 {
+  color: var(--bg);
+  font-size: 2rem;
+  margin-bottom: 1.1rem;
+}
+
+.footer-line {
+  border-bottom: 0.1rem solid var(--deepgray);
+}
+
+.li-bold {
+  font-size: 1.25rem !important;
+  font-weight: 600;
+  margin-bottom: 0.8rem !important;
+}
+
+.li-down {
+  margin-top: 2.8rem;
+}
+
+.li-bottom {
+  margin-top: 5rem;
+  font-size: 0.9rem !important;
+  margin-bottom: 0.4rem !important;
+}
+
+.footer-ul > li {
+  color: var(--bg);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+
+  transition: all 0.3s ease;
+}
+.footer-ul > li:hover {
+  transform: translateX(0.4rem);
+  cursor: pointer;
+}
+
+.brokers {
+  font-size: 1rem !important;
+}
+
+.footer-bottom {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copywrite {
+  color: var(--bg);
+  font-size: 1.125rem;
+}
+
+.help-support {
+  border-bottom: 0.12rem solid var(--bg);
+  margin-left: 0.5rem;
+  padding-bottom: 0.4rem;
+}
+
+/*----------------
+    Footer section css
+    ----------------*/
+
+/*------------------------------------
+  Use Media querey for mobile responsive
+  --------------------------------------*/
+@media (max-width: 750px) {
+  .main-container .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer {
+    padding: 0 1rem;
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .social-icon {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  .sell-business {
+    display: none;
+  }
+  .help-support {
+    border-bottom: 0.12rem solid var(--bg);
+    margin-left: 3.5rem;
+
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 0.4rem;
+  }
+
+  .copywrite {
+    margin-top: 1.5rem;
+  }
+}

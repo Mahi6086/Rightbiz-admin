@@ -91,7 +91,7 @@
 
 .Business {
   border: 0.1rem solid var(--deepwhite);
-
+  margin-top: 1.45rem;
   border-radius: 0.45rem;
   background: var(--lgwhite);
   margin-bottom: 1.25rem;
@@ -122,6 +122,10 @@
   margin-left: 0.5rem;
   margin-top: 0.12rem;
   font-size: 0.875rem;
+}
+.Business-card-list > span > a {
+  color: var(--gray-blue);
+  text-decoration: none;
 }
 
 .Business-card-bottom {

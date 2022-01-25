@@ -9,9 +9,7 @@
         CSS Styles
     ------------------- -->
     <link rel="stylesheet" href="./CSS/styles.css" />
-    <link rel="stylesheet" href="./CSS/header.css" />
-    <link rel="stylesheet" href="./CSS/controlpanel.css" />
-    <link rel="stylesheet" href="./CSS/footer.css" />
+    <link rel="stylesheet" href="./CSS/messages.css" />
 
     <title>RightBiz</title>
   </head>
@@ -114,86 +112,62 @@
       <section class="main-container">
         <div class="flex">
           <div class="grid">
-            <div class="Activities">
-              <div class="activity-card">
-                <svg class="activity-icon">
+            <!-- --------------------
+                  messages section
+                ---------------------->
+            <div class="membership-card">
+              <div class="message-user">
+                <svg style="fill: #06d853" class="svg-block">
                   <use
-                    xlink:href="./assets/images/svg/Background.svg#mgs"
+                    xlink:href="./assets/images/svg/comment-solid.svg#comment"
                   ></use>
                 </svg>
-                <h4>Messages</h4>
-                <p>View your messages from buyers and sellers</p>
+                <div class="message-title">
+                  <div style="color: #06d853" class="title">Message</div>
+                  <div class="desc">
+                    Click the 'Read Message to view enquires and message from
+                    potential buyers and sellers'
+                  </div>
+                </div>
               </div>
-              <div class="activity-card">
-                <svg class="activity-icon">
-                  <use
-                    xlink:href="./assets/images/svg/Background(0).svg#svg0"
-                  ></use>
-                </svg>
-                <h4>View & Edit Adverts</h4>
-                <p>View progress, edit or manage your advert</p>
-              </div>
+              <div class="content_main">
+                <button
+                  style="background-color: #fff0d9"
+                  class="navber-btn"
+                  id="seller-btn"
+                >
+                  Seller
+                </button>
+                <div class="message-flex">
+                  <p>Kings Business Transfer</p>
+                  <div class="date">
+                    <span class="day-time">Yesterday at 10:01</span>
+                    <span
+                      style="background-color: #06d853; color: white"
+                      class="circle"
+                      ><b>1</b></span
+                    >
 
-              <div class="activity-card">
-                <svg class="activity-icon">
-                  <use
-                    xlink:href="./assets/images/svg/Background (7).svg#svg7"
-                  ></use>
-                </svg>
-                <h4>Create Advert</h4>
-                <p>Selling your business? Create your advert.</p>
-              </div>
-
-              <div class="activity-card">
-                <svg class="activity-icon">
-                  <use
-                    xlink:href="./assets/images/svg/Background (4).svg#svg4"
-                  ></use>
-                </svg>
-                <h4>Account Details</h4>
-                <p>Setup or manage your email alerts.</p>
-              </div>
-              <div class="activity-card">
-                <svg class="activity-icon">
-                  <use
-                    xlink:href="./assets/images/svg/Background (2).svg#svg2"
-                  ></use>
-                </svg>
-                <h4>Personal Details</h4>
-                <p>Manage your personal details.</p>
-              </div>
-
-              <div class="activity-card">
-                <svg class="activity-icon">
-                  <use
-                    xlink:href="./assets/images/svg/Background (9).svg#svg9"
-                  ></use>
-                </svg>
-                <h4>Feedback</h4>
-                <p>Help us improve Rightbiz by sharing your feedback.</p>
-              </div>
-              <div class="activity-card">
-                <svg class="activity-icon">
-                  <use
-                    xlink:href="./assets/images/svg/Background(12).svg#svg12"
-                  ></use>
-                </svg>
-                <h4>Write Testimonial</h4>
-                <p>
-                  Share your thoughts and help other user to make better
-                  decisions.
-                </p>
-              </div>
-              <div class="activity-card">
-                <svg class="activity-icon">
-                  <use
-                    xlink:href="./assets/images/svg/Background (5).svg#svg5"
-                  ></use>
-                </svg>
-                <h4>Blocked Users</h4>
-                <p>Manage all users you have blocked.</p>
+                    <svg style="fill: #ff4040" class="svg-delete">
+                      <use
+                        xlink:href="./assets/images/svg/trash-alt-solid.svg#delete"
+                      ></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="message-line"></div>
+                <div class="btn-center">
+                  <div class="btn-flex">
+                    <button>< PREV</button>
+                    <p>page 1 of 50</p>
+                    <button class="next">NEXT ></button>
+                  </div>
+                </div>
               </div>
             </div>
+            <!----------------------- 
+                        messages section 
+                -------------------------->
             <div class="Question">
               <div class="Question-part">
                 <h1>Have a Question?</h1>

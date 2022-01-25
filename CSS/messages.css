@@ -1,0 +1,136 @@
+.membership-card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 1.9rem;
+  padding-top: 2rem;
+  border-radius: 0.525rem;
+}
+.message-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.9rem;
+  margin-left: 1.8rem;
+  margin-right: 1.8rem;
+  border: 0.13rem solid var(--green-d-2);
+  border-radius: 1rem;
+  background-color: var(--green-d-3);
+}
+.message-title {
+  margin-left: 0.8rem;
+}
+.message-title > .title {
+  color: var(--green-d-2);
+}
+.membership-card .desc {
+  font-size: 0.875rem;
+  margin-left: 0.1rem;
+  color: #555;
+}
+.message-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+.message-flex > p {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+.svg-block {
+  fill: var(--green-d-2);
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.date {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.date .svg-delete {
+  fill: var(--red);
+  width: 0.9rem !important;
+  height: 0.9rem !important;
+  margin-left: 6rem;
+
+  margin-right: 0.5rem;
+}
+.day-time {
+  margin-right: 1rem;
+  font-size: 0.875rem;
+  color: var(--blue);
+}
+.date .circle {
+  display: inline-block;
+  position: relative;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  color: var(--white);
+  background-color: var(--green-d-2);
+}
+.circle > b {
+  font-size: 0.875rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.content_main {
+  padding: 2rem;
+  padding-top: 1rem !important;
+}
+#seller-btn {
+  color: var(--orange-l-1);
+  background-color: var(--orange-l-2);
+}
+.content_main .message-line {
+  margin-top: 1rem;
+  border-top: 0.1rem solid var(--deepwhite);
+}
+
+.Business-card-list > span > a {
+  color: var(--gray-blue);
+  text-decoration: none;
+}
+.btn-center {
+  margin-top: 1.5rem;
+}
+.btn-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-flex > button {
+  border: none;
+  outline: none;
+  background-color: var(--white);
+  color: var(--deepwhite);
+}
+.btn-flex > .next {
+  color: var(--blue);
+}
+
+.btn-flex > p {
+  font-size: 0.875rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+@media (max-width: 750px) {
+  .message-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 0.5rem;
+  }
+  .date .svg-delete {
+    margin-left: 5.2rem;
+  }
+  .svg-block {
+    fill: var(--green-d-2);
+    width: 2rem;
+    margin-bottom: 3rem;
+  }
+}
